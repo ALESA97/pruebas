@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -40,9 +41,39 @@ public class Main {
 
         if (isInScores) {
             System.out.println("Un alumno ha conseguido un 10");
-        }else{
+        }else {
             System.out.println("Naide ha sacado un 10");
         }
+        //FIN Arrays y boolean
 
-    }   //FIN Arrays y boolean
+        // INICIO Arrays+ordenar array
+        float[] NOTAS = {7.5f,5.0f,10.0f,6.0f,10.0f};
+        for (int i=0; i<scores.length-1;i++){
+            for (int j=i+1;j<scores.length;j++){
+                if (scores[i]>scores[j]){
+                    float cambio = scores[i];
+                    scores[i] = scores[j];
+                    scores[j]=cambio;
+                }
+            }
+        }
+        System.out.println("El array ordenado es: ");
+        for (int i=0; i<scores.length;i++){
+            System.out.print(scores[i]+" ");
+        }
+        System.out.println();
+        // FIN Arrays+ordenar array
+
+        //INICIO Arrays+ordenar array codigo sencillo
+        float[] notas = {7.5f,5.0f,10.0f,6.0f,10.0f};
+        Arrays.sort(scores);
+        System.out.println("El array ordenado es: ");
+        for (int i=0; i<scores.length;i++){
+            System.out.print(scores[i]+" ");
+        }
+        System.out.println();
+
+        //FIN Arrays+ordenar array codigo sencillo
+    }
+
 }
