@@ -74,6 +74,15 @@ public class Main {
         System.out.println();
 
         //FIN Arrays+ordenar array codigo sencillo
+        int arraylenght=input.nextInt();
+        double[] numbers=new double[arraylenght];
+
+        for (int i = 0; i < arraylenght; i++) {
+            numbers[i]=input.nextDouble();
+
+        }
+        System.out.println(numbers+"%");
+
     }
 
 }
