@@ -82,6 +82,8 @@ public class Main {
 
         }
         System.out.println(numbers+"%");
+        System.out.println("Commit 1");
+        System.out.println("Commit 2");
 
     }
 
